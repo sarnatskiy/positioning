@@ -4,10 +4,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: sans-serif;
+    height: 600px;
+    background-color: white;
 }
 
 .container {
@@ -23,7 +21,7 @@ body {
 }
 
 .target {
-    background-color: #E50012;
+    background-color: red;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -59,14 +57,13 @@ body {
     height: 100%;
 }
 
-.red { background-color: #f25022; }
-.green { background-color: #7fba00; }
-.blue { background-color: #00a4ef; }
-.yellow { background-color: #ffb900; }
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.yellow { background-color: orange; }
 
 #openModal {
     padding: 10px 20px;
-    cursor: pointer;
 }
 
 .overlay {
@@ -79,7 +76,7 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .overlay.active {
@@ -91,7 +88,7 @@ body {
     width: 640px;
     padding: 40px;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(190, 46, 46);
     border-radius: 4px;
 }
 
@@ -102,8 +99,7 @@ body {
     background: none;
     border: none;
     font-size: 30px;
-    cursor: pointer;
-    color: #333;
+    color: black;
 }
 
 .progress-bar {

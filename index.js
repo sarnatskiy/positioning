@@ -35,4 +35,7 @@ function fillProgressBar(duration) {
     requestAnimationFrame(animate);
 }
 
-fillProgressBar(3000);
+openBtn.addEventListener('click', () => {
+    overlay.classList.add('active');
+    fillProgressBar(3000);
+});
